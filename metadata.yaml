@@ -1,0 +1,22 @@
+name: slurmdbd
+summary: Slurm Database Daemon.
+maintainer: Omnivector Solutions <admin@omnivector.solutions>
+description: |
+    Slurmdbd provides a secure enterprise-wide interface to a database for Slurm. This is particularly useful for archiving accounting records.
+tags:
+    - hpc
+    - slurm
+series:
+    - bionic
+min-juju-version: 2.7.1
+subordinate: false
+
+resources:
+  slurmdbd-snap:
+    type: file
+    filename: slurmdbd.snap
+    description: SLURMDBD snap
+  munge-snap:
+    type: file
+    filename: munge.snap
+    description: MungeD snap
